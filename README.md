@@ -14,4 +14,28 @@ You can head to my repository located in my GitHub which will be provided in the
 
 ## Usage
 
-GitHub: 
+GitHub: https://github.com/Gunther0662/Automatic-READ-ME 
+
+## Credits
+
+Xpert Learning had provided code in which was use for the development of this webpage. SMU Coding Bootcamp.
+
+## License
+
+Mit License
+
+## Badges 
+
+N/A
+
+## Features
+
+N/A
+
+## How to Contribute
+
+N/A
+
+## Test
+
+N/A
