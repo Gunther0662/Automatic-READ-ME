@@ -48,7 +48,7 @@ const questions = [
             type: 'list',
             message: 'What license is the project follow?',
             name: 'lincense',
-            choices: ['MIT License, Apache 2.0, GNU, BSD, N/A '],
+            choices: ['MIT License', 'Apache 2.0', 'GNU', 'BSD', 'N/A'],
         },
 
         {
@@ -80,7 +80,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('filename', data, err => {
+    fs.writeFile('ReadMe.md', data, err => {
       if (err) {
         console.error(err);
       } else {
@@ -91,7 +91,12 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((inquirerResponse) => {
+        console.log('Generate ReadME...');
+        writeToFile('ReadMe.md', generateMarkdown({ ...inquirerResponse }));
+    });
+}
 
 // Function call to initialize app
 init();
